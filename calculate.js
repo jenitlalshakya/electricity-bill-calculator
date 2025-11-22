@@ -180,6 +180,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Trigger calculation when MCB Ampere is changed
         calculateAndDisplayBill();
     });
+
+    // Footer
+    document.getElementById("year").textContent = new Date().getFullYear();
 });
 
 function calculateTotalBill(mcbAmphere, consumption) {
